@@ -25,22 +25,11 @@ header{
     align-items: center;
 }
 
-.flex{
-    display: flex;
-}
-
-.w-auto{
-    width: auto;
-}
-
-.align-items-center{
-    align-items: center;
-}
-
 main{
     max-width: 1024px;
     align-items: center;
     margin: 0 auto;
+    background-color: white;
 }
 
 h2{
@@ -50,19 +39,18 @@ h2{
    font-weight: lighter;
 }
 
-section{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+.item{
     max-width: 1024px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 16px 16px;
-    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
 
-section img{
-    width: 180px;
-    margin: 16px;
-    border-radius: 4px;
-
+.img-product{
+    width: 150px;
+    border: 1px solid;
+    height: 150px;
 }
